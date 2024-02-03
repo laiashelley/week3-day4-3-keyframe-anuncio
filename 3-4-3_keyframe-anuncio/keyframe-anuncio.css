@@ -1,0 +1,104 @@
+
+.general{
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+  width: 1900px;
+  height: 700px;
+  position: relative;
+  background-image: url(/img/cyberpunk.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.ufo{
+    position: absolute;
+    left: 1500px;
+    top: 50px;
+    animation: ufo 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.title{
+    margin-left: 20px;
+    font-family: 'Monoton', sans-serif;
+    color: rgb(179, 26, 26);
+    font-size: 200%;
+    letter-spacing: 1mm;
+    animation: alien-title 0.5s infinite;
+}
+
+h3{
+    margin-left: 20px;
+    font-size: xx-large;
+    font-family: 'Orbitron', sans-serif;
+    color: aliceblue;
+    letter-spacing: 0.5mm;
+}
+
+.parrafo{
+  margin-top: 30px;
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+  color: aliceblue;
+  letter-spacing: 0.5mm;
+}
+
+.parrafo2{
+  margin-top: 250px;
+  display: flex;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  color: aliceblue;
+  letter-spacing: 0.5mm;
+}
+
+.alien{
+    animation:alien 1s infinite;
+    animation-iteration-count: ease-in-out;
+}
+
+a{
+  padding: 10px;
+  margin-left: 200px;
+  background-color: rgb(179, 26, 26);
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  text-decoration: none;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+  animation: suscribete 0.5s infinite;
+}
+
+@keyframes alien-title{
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes ufo{
+    0% {rotate: 5deg;}
+    50% {rotate: 20deg;}
+    100% {rotate: 5deg;}
+}
+
+@keyframes alien{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes suscribete{
+    0% {opacity:1; scale:150%;}
+    50% {opacity:0;}
+    100% {opacity:1; scale:150%;}
+}
